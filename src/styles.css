@@ -101,9 +101,6 @@ h3 { font-size: var(--fs-h3) }
     font-size: var(--fs-h3);
 }
 
-/* Temporary */
-nav { display: none;}
-
 .section__subtitle--intro,
 .section__subtitle--about {
     background: var(--clr-accent);
