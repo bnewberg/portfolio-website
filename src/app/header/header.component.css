@@ -18,7 +18,7 @@ header {
     right: 0;
     z-index: 100;
 
-    /* transform: translateX(100%); */
+    transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
 
@@ -53,6 +53,26 @@ header {
     right: 1em;
     top: 1em;
     z-index: 1000;
+}
+
+.nav-open {
+    transform: translateX(0%);
+}
+
+.nav-open-toggle {
+    position: fixed;
+}
+
+.nav-open-hamburger {
+    transform: rotate(.625turn);
+}
+
+.nav-open-hamburger::before {
+    transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open-hamburger::after {
+    opacity: 0;
 }
 
 .hamburger {

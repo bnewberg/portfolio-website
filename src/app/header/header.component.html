@@ -2,12 +2,13 @@
     <div class="logo">
         <img src="/assets/logo.png" alt="">
     </div>
-    <button class="nav-toggle" aria-label="toggle navigation" [ngStyle]="{position: getNavTogglePosition()}"(click)="onNavToggle()">
-        <span class="hamburger"></span>
+    <button
+        [ngClass]="{'nav-open-toggle': isNavOpen, 'nav-toggle': true}"
+        aria-label="toggle navigation"
+        (click)="onNavToggle()">
+        <span [ngClass]="{'nav-open-hamburger': isNavOpen, 'hamburger': true}"></span>
     </button>
-    <!-- <nav [ngClass]="{'nav-open': isNavOpen, nav: true}"> -->
-    <!-- <nav class="nav"> -->
-    <nav class="nav" [ngStyle]="{transform: getNavTransform()}">
+    <nav [ngClass]="{'nav-open': isNavOpen, 'nav': true}">
         <ul class="nav__list">
             <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
             <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
