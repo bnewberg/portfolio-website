@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { faAngular, faDev, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
@@ -7,10 +8,10 @@ import { faAngular, faDev, faGithub, faTwitter } from '@fortawesome/free-brands-
     styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
-    faGithub = faGithub;
-    faDev = faDev;
-    faTwitter = faTwitter;
-    faAngular = faAngular
+    faGithub = faGithub as IconProp;
+    faDev = faDev as IconProp;
+    faTwitter = faTwitter as IconProp;
+    faAngular = faAngular as IconProp;
 
 
     constructor() { }
