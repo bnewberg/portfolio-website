@@ -12,15 +12,22 @@
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 60px;
+    grid-gap: 20px;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
 }
 
 .portfolio__item {
-    background: var(--clr-accent);
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: var(--clr-accent);
+    overflow: hidden; */
 }
 
-.portfolio__img {
+/* .portfolio__img {
     transition:
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
@@ -35,4 +42,4 @@
 .portfolio__item:focus .portfolio__img {
     transform: scale(1.2);
     opacity: .75;
-}
+} */
