@@ -1,5 +1,7 @@
 # PortfolioWebsite
 
+[![Azure Static Web Apps CI/CD](https://github.com/bnewberg/portfolio-website/actions/workflows/azure-static-web-apps-kind-glacier-093ec7e1e.yml/badge.svg?event=push)](https://github.com/bnewberg/portfolio-website/actions/workflows/azure-static-web-apps-kind-glacier-093ec7e1e.yml)
+
 This is my portfolio website where I host all past and current projects.
 
 ## Running this website locally
